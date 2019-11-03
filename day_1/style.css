@@ -1,60 +1,87 @@
-html {
-  font-size: 15px;
-  background: url(https://res.cloudinary.com/tico-cloudinary/image/upload/v1572751960/thirty_days_of_vanilla_js/kayle_cheeseburger_lkdtkn.jpg)
-    top center;
-  background-size: cover;
-}
-
-body,
-html {
+body {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  justify-content: flex-end;
   margin: 0;
-  padding: 0;
   font-family: sans-serif;
-  border: 2px solid red;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.kayle-title {
+.container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  background: rgb(244, 132, 12);
+}
+
+.kayle-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: #eb21bc;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: 'Lobster Two', cursive;
-  border-top: 5px solid #8fee01;
-  border-bottom: 5px solid #8fee01;
+  border-top: 10px solid #8fee01;
+  border-bottom: 10px solid #8fee01;
   background: blue;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+  z-index: 4;
+}
+
+.wife-pic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  z-index: 1;
+}
+
+.wife-pic {
+  width: 100%;
 }
 
 .keys {
+  height: 100%;
+  width: 50%;
   display: flex;
-  flex: 1;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 60px 10px 60px;
+  background: rgb(244, 132, 12);
 }
 
 .key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 0.4rem solid black;
   border-radius: 0.5rem;
-  margin: 1rem;
-  font-size: 2rem;
-  padding: 3rem 0.5rem;
+  /* margin: 3rem 1rem; */
+  font-size: 1rem;
   transition: all 0.07s ease;
-  width: 10rem;
+  width: 25%;
+  height: 20%;
   text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 0.5rem black;
+  color: #8fee01;
+  background: purple;
+  text-shadow: 0 0 0.7rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
+  border-color: blue;
   box-shadow: 0 0 1rem #ffc600;
 }
 
