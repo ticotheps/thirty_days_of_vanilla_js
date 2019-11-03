@@ -31,7 +31,7 @@ body {
   border-bottom: 10px solid #8fee01;
   background: blue;
   text-align: center;
-  padding: 40px;
+  padding: 20px 10px;
   margin: 0;
   z-index: 4;
 }
