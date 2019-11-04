@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>JS + CSS Clock</title>
+    <title>Lucy's Lacrosse Clock</title>
   </head>
   <body>
     <div class="clock">
@@ -15,8 +15,10 @@
 
     <style>
       html {
-        background: #018ded url(http://unsplash.it/1500/1000?image=881&blur=5);
+        background-image: url(https://res.cloudinary.com/tico-cloudinary/image/upload/v1572900144/thirty_days_of_vanilla_js/lucy_lax_yebezf.png);
         background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         font-family: 'helvetica neue';
         text-align: center;
         font-size: 10px;
@@ -32,15 +34,16 @@
       }
 
       .clock {
-        width: 30rem;
-        height: 30rem;
-        border: 20px solid white;
+        width: 60rem;
+        height: 60rem;
+        border: 20px solid rgb(225, 100, 204);
         border-radius: 50%;
         margin: 50px auto;
         position: relative;
         padding: 2rem;
-        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
-          inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+          inset 0 0 0 3px rgb(225, 100, 204), inset 0 0 10px black,
+          0 0 10px rgba(0, 0, 0, 0.2);
       }
 
       .clock-face {
@@ -55,7 +58,7 @@
       .hand {
         width: 50%;
         height: 6px;
-        background: black;
+        background: white;
         position: absolute;
         top: 50%;
         transform-origin: 100%;
